@@ -1,5 +1,5 @@
-require 'minitest/pride'
 require 'minitest/autorun'
+require 'minitest/pride'
 require_relative 'space_age'
 
 # Common test data version: 1.1.0 8d4df79
