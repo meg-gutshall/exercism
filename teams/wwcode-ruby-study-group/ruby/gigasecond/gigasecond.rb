@@ -1,8 +1,11 @@
-=begin
-Write your code for the 'Gigasecond' exercise in this file. Make the tests in
-`gigasecond_test.rb` pass.
+class Gigasecond
+  def initialize
+    @time=time
+  end
 
-To get started with TDD, see the `README.md` file in your
-`ruby/gigasecond` directory.
-=end
-
+  def self.from(time)
+    seconds = time.to_i + 1000000000
+    local = Time.at(seconds)
+    giga = local.getutc
+  end
+end
