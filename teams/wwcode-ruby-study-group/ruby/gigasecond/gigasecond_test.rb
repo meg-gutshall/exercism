@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'minitest/pride'
 require_relative 'gigasecond'
 
 # Common test data version: 1.1.0 5506bac
