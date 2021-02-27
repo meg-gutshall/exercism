@@ -8,19 +8,18 @@ class HighScores
   end
 
   def latest
-    @scores.pop
+    @scores.last
   end
 
   def personal_best
-    @scores.sort!.pop
+    @scores.max
   end
 
   def personal_top_three
-    @scores.sort!.pop(3).reverse
+    @scores.max(3)
   end
 
   def latest_is_personal_best?
-    latest = @scores.pop
-    latest > personal_best ? true : false
+    latest == personal_best
   end
 end
